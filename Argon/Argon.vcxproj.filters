@@ -1,67 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="src\Elements\MainWindow\MainWindowClassManager.cpp" />
+    <ClCompile Include="src\Argon\Argon.cpp" />
+    <ClCompile Include="src\ElementBase\Element.cpp" />
+    <ClCompile Include="src\Elements\Button\ButtonClassManager.cpp" />
+    <ClCompile Include="src\Elements\Button\Button.cpp" />
+    <ClCompile Include="src\Shared\Styles.cpp" />
+    <ClCompile Include="src\Shared\WindowClassManager.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Shared\WindowIDProvisor.cpp" />
+    <ClCompile Include="src\Elements\MainWindow\MainWindow.cpp" />
+    <ClCompile Include="src\Shared\Globals.cpp" />
+    <ClCompile Include="src\Elements\Input\Input.cpp" />
+    <ClCompile Include="src\Elements\Input\InputClassManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Argon.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowClassManager.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Styles.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Argon\Argon.h" />
+    <ClInclude Include="src\Elements\Button\Button.h" />
+    <ClInclude Include="src\Shared\Styles.h" />
+    <ClInclude Include="src\Shared\WindowClassManager.h" />
+    <ClInclude Include="src\System\framework.h" />
+    <ClInclude Include="src\System\targetver.h" />
+    <ClInclude Include="src\ElementBase\Element.h" />
+    <ClInclude Include="src\EventSystem\Event.h" />
+    <ClInclude Include="src\Shared\WindowIDProvisor.h" />
+    <ClInclude Include="src\Elements\MainWindow\MainWindow.h" />
+    <ClInclude Include="src\Shared\Globals.h" />
+    <ClInclude Include="src\Elements\Input\Input.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Argon.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Button.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Styles.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Argon.rc">
-      <Filter>Файлы ресурсов</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="small.ico">
-      <Filter>Файлы ресурсов</Filter>
-    </Image>
-    <Image Include="Argon.ico">
-      <Filter>Файлы ресурсов</Filter>
-    </Image>
+    <Image Include="Resources\Argon.ico" />
+    <Image Include="Resources\small.ico" />
   </ItemGroup>
 </Project>

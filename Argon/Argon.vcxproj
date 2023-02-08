@@ -18,6 +18,39 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Argon\Argon.cpp" />
+    <ClCompile Include="src\Elements\MainWindow\MainWindowClassManager.cpp" />
+    <ClCompile Include="src\ElementBase\Element.cpp" />
+    <ClCompile Include="src\Elements\Button\Button.cpp" />
+    <ClCompile Include="src\Elements\Button\ButtonClassManager.cpp" />
+    <ClCompile Include="src\Elements\MainWindow\MainWindow.cpp" />
+    <ClCompile Include="src\Elements\Input\InputClassManager.cpp" />
+    <ClCompile Include="src\Elements\Input\Input.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Shared\Globals.cpp" />
+    <ClCompile Include="src\Shared\Styles.cpp" />
+    <ClCompile Include="src\Shared\WindowClassManager.cpp" />
+    <ClCompile Include="src\Shared\WindowIDProvisor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Elements\MainWindow\MainWindow.h" />
+    <ClInclude Include="src\Argon\Argon.h" />
+    <ClInclude Include="src\ElementBase\Element.h" />
+    <ClInclude Include="src\Elements\Button\Button.h" />
+    <ClInclude Include="src\Elements\Input\Input.h" />
+    <ClInclude Include="src\EventSystem\Event.h" />
+    <ClInclude Include="src\Shared\Globals.h" />
+    <ClInclude Include="src\Shared\Styles.h" />
+    <ClInclude Include="src\Shared\WindowClassManager.h" />
+    <ClInclude Include="src\System\framework.h" />
+    <ClInclude Include="src\System\targetver.h" />
+    <ClInclude Include="src\Shared\WindowIDProvisor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Argon.ico" />
+    <Image Include="Resources\small.ico" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -70,6 +103,14 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\maxix\source\repos\Argon\Argon\src;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\maxix\source\repos\Argon\Argon\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\maxix\source\repos\Argon\Argon\src;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\maxix\source\repos\Argon\Argon\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -119,6 +160,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -127,28 +169,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Argon.h" />
-    <ClInclude Include="Button.h" />
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="Styles.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="WindowClassManager.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Argon.cpp" />
-    <ClCompile Include="Button.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Styles.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Argon.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Argon.ico" />
-    <Image Include="small.ico" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
