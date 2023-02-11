@@ -29,7 +29,7 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmd
     Globals::font = CreateFontA(
         16, 0, 0, 0, FW_MEDIUM, FALSE, FALSE, FALSE, 65001,
         OUT_TT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY,
-        DEFAULT_PITCH | FF_DONTCARE, "Comic Sans"
+        DEFAULT_PITCH | FF_DONTCARE, "Times New Roman"
     );
 
     Button* btn1 = new Button(L"Кнопка 1");

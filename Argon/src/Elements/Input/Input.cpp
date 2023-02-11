@@ -3,7 +3,8 @@
 namespace InputModule {
 	StyleSheet defaultStyles = {
 		{"color", RGB(0, 0, 0)},
-		{"background-color", RGB(255, 255, 255)}
+		{"background-color", RGB(255, 255, 255)},
+		{"border-color", RGB(0, 0, 0)}
 	};
 	Input::Input(int x, int y, int w, int h, const wchar_t* defaultText) {
 		this->x = x;

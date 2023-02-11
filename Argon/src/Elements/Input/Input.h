@@ -13,7 +13,7 @@ namespace InputModule {
 
 	struct InputWindowState {
 		std::wstring text;
-		int carriageX = 0;
+		int carriagePos = 0;
 	};
 
 	extern StyleSheet defaultStyles;
